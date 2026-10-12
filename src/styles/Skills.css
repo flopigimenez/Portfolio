@@ -1,0 +1,72 @@
+.skills {
+  padding: 100px 0;
+  background: var(--bg-primary);
+}
+
+.skills-grid {
+  display: grid;
+  gap: 40px;
+}
+
+.skill-category h3 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: var(--accent);
+  position: relative;
+  padding-left: 16px;
+}
+
+.skill-category h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--gradient);
+  border-radius: 2px;
+}
+
+.skill-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skill-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: default;
+}
+
+.skill-chip.tech {
+  background: var(--bg-card);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+}
+
+.skill-chip.soft {
+  background: rgba(167, 139, 250, 0.12);
+  color: var(--accent-hover);
+  border: 1px solid rgba(167, 139, 250, 0.22);
+}
+
+.skill-icon {
+  font-size: 1.2rem;
+  display: flex;
+}
+
+.soft-icon {
+  color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .skills {
+    padding: 60px 0;
+  }
+}

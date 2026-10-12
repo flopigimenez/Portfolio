@@ -1,0 +1,95 @@
+.about {
+  padding: 100px 0;
+  background: var(--bg-secondary);
+}
+
+.about-grid {
+  display: grid;
+  gap: 40px;
+}
+
+.about-text p {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  margin-bottom: 16px;
+  line-height: 1.8;
+}
+
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.about-card {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  padding: 32px;
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+}
+
+.card-icon {
+  font-size: 2rem;
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+
+.about-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+.about-card ul {
+  list-style: none;
+}
+
+.about-card li {
+  padding: 8px 0;
+  color: var(--text-secondary);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.about-card li:last-child {
+  border-bottom: none;
+}
+
+.about-card li strong {
+  color: var(--text-primary);
+}
+
+.status-badge {
+  font-size: 0.75rem;
+  background: var(--accent);
+  color: white;
+  padding: 2px 10px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.status-badge.active {
+  background: #7c3aed;
+  animation: pulse-badge 2s infinite;
+}
+
+@keyframes pulse-badge {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.course-institution {
+  font-size: 0.85rem;
+  color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 60px 0;
+  }
+}
