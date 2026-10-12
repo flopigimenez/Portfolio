@@ -1,4 +1,4 @@
-import { FaHeart, FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaHeart, FaGithub, FaEnvelope } from "react-icons/fa";
 import { personalInfo } from "../data/portfolioData";
 import "../styles/Footer.css";
 

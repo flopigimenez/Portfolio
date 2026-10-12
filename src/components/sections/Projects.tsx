@@ -5,11 +5,7 @@ import { projects } from "../../data/portfolioData";
 import "../../styles/Projects.css";
 
 export default function Projects() {
-  const [filter, setFilter] = useState<string>("all");
-
-  const allTags = Array.from(
-    new Set(projects.flatMap((p) => p.tags))
-  );
+  const [filter] = useState<string>("all");
 
   const filtered =
     filter === "all"
