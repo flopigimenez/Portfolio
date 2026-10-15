@@ -1,4 +1,4 @@
-import elbuenSabor from "../assets/img/elbuenSabor.png";
+import elbuenSabor from "../assets/img/elBuenSabor.png";
 import beautyConnect from "../assets/img/BeautyConnect.png";
 import pluginTurnos from "../assets/img/PluginTurnos.png";
 
