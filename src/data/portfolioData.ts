@@ -1,6 +1,6 @@
 import elbuenSabor from "../assets/img/elbuenSabor.png";
-import beautyConnect from "../assets/img/beautyConnect.png";
-import pluginTurnos from "../assets/img/pluginTurnos.png";
+import beautyConnect from "../assets/img/BeautyConnect.png";
+import pluginTurnos from "../assets/img/PluginTurnos.png";
 
 export interface Project {
   id: number;
